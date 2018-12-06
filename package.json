@@ -1,0 +1,32 @@
+{
+    "name": "bucklescript-tea-bulma",
+    "version": "0.0.1",
+    "description": "Bulma material design for bucklescript-tea",
+    "main": "index.js",
+    "scripts": {
+        "clean": "bsb clean",
+        "clean:all": "bsb -clean-world",
+        "build": "bsb",
+        "build:all": "bsb -make-world",
+        "watch": "bsb -w",
+        "prebuild:test": "run-s build",
+        "build:test": "run-p build:test:*",
+        "pretest": "run-s build:test",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "TEA",
+        "Bucklescript",
+        "OCaml",
+        "Bulma"
+    ],
+    "author": "j-hotlink",
+    "license": "LGPL-3.0-or-later",
+    "devDependencies": {
+        "browserify": "^14.0.0",
+        "bs-platform": "^3.0.0",
+        "npm-run-all": "4.0.2",
+        "pre-commit": "^1.2.0",
+        "watchify": "3.9.0"
+    }
+}
